@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Job Application</title>
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+
+<font size="10" color="purple">Job Application</font>
+<p>&nbsp;</p>
+
+<form role="form" action="http://gclass.alexburner.com/formtest.php" method="post">
+
+	<fieldset class="form-horizontal" >
+		<legend>Basic Information</legend>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">Title</label>
+			<div class="col-sm-9">
+				<select class="form-control" name="title">
+					<option value="" selected="true">Choose a title</option>
+					<option value="Mr.">Mr.</option>
+					<option value="Mrs.">Mrs.</option>
+					<option value="Ms.">Ms.</option>
+					<option value="Miss">Miss</option>
+					<option value="Mx.">Mx.</option>
+					<option value="Master">Master</option>
+					<option value="Maid">Maid</option>
+					<option value="Madam">Madam</option>
+				</select>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">First Name</label>
+			<div class="col-sm-9">
+				<input class="form-control" type="text" name="first_name">
+			</div>
+		</div>
+		<div class="checkbox">
+			<label class="col-sm-3 control-label"></label>
+			<div class="col-sm-9">
+				<input type="checkbox" name="middle_name" value="no_middle_name">
+				I don't have a middle name
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">Middle Name</label>
+			<div class="col-sm-9">
+				<input class="form-control" type="text" name="middle_name">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">Last Name</label>
+			<div class="col-sm-9">
+				<input class="form-control" type="text" name="last_name">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label class="col-sm-3 control-label">Gender</label>
+			<div class="col-sm-9">
+				<div class="radio">
+					<label>
+						<input type="radio" name="legal" value="male">Male
+					</label>
+				</div>
+				<div class="radio">
+					<label>
+						<input type="radio" name="legal" value="female">Female
+					</label>
+				</div>
+				<div class="radio">
+					<label>
+						<input type="radio" name="legal" value="other">Other
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="form-group">
+		    <label class="col-sm-3 control-label">Email</label>
+		    <div class="col-sm-9">
+				<input class="form-control" type="text" name="email">
+			</div>
+		</div>
+	</fieldset>
+
+	<p>&nbsp;</p>
+
+	<fieldset>
+		<legend>Personal Statement</legend>
+		<div class="form-group">
+			<label class="control-label">In your opinion, what make you unique?</label>
+			<textarea class="form-control" name="unique" rows="5"></textarea>
+		</div>
+		<div class="form-group">
+			<label class="control-label">Do you work well with others and why?</label>
+			<textarea class="form-control" name="cooperation" rows="5"></textarea>
+		</div>
+	</fieldset>
+
+	<p>&nbsp;</p>
+
+	<input class="btn btn-primary btn-lg" type="submit" value="Submit form">
+
+	<p>&nbsp;</p>
+
+</form>
+</div><!-- close .container -->
+</body>
+</html>
